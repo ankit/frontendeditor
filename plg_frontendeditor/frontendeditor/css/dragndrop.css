@@ -1,0 +1,14 @@
+.fr_drag{
+	/*suggested by Robert Gregor*/
+	outline: 1px dashed #999; 
+	#border: 1px dashed #999;
+	cursor:move;
+}
+.fr_draggable:hover{
+	outline: 1px dashed #999;
+	#border: 1px dashed #999;
+	cursor:move;
+}
+.fr_draggable{
+
+}

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="plugin" group="system" method="upgrade">
+	<name>System - Frontend Editor</name>
+	<creationDate>April 2009</creationDate>
+	<author>Ankit Ahuja</author>
+	<authorEmail>ahuja.ankit@gmail.com</authorEmail>
+	<authorUrl>http://www.ankitahuja.com</authorUrl>
+ 	<copyright>Copyright (C) 2009 Open Source Matters. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<version>0.3.7</version>
+	<description>Enable enhanced ajaxy frontend editing functionality ( this plugin works in conjunction with the Frontend Editor component and Article Editor plugin )</description>
+	<files>
+		<filename plugin="frontendeditor">frontendeditor.php</filename>
+		<!-- JavaScript -->
+		<folder>frontendeditor/js</folder>
+		<!-- CSS -->
+		<folder>frontendeditor/css</folder>
+		<!-- Images -->
+		<folder>frontendeditor/images</folder>
+	</files>
+</install>

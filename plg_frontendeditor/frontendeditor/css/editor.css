@@ -1,0 +1,79 @@
+*{
+	text-align:left !important;
+}
+html{
+	margin: 0px !important;	
+}
+body{
+	margin:0px !important;
+	padding:0px !important;
+	line-height: 16px !important;
+}
+#adminForm{
+	min-height:520px;
+}
+#adminForm h2{
+	font-family:Georgia,'Lucida Grande',Verdana, 'Times New Roman', Arial, Helvetica;
+	font-size:15px;
+	padding: 0px;
+	margin: 0px;
+	margin-bottom: 20px;
+	font-weight: normal;
+}
+#adminForm .small{
+	font-style: italic;
+	color: #adadad;
+	font-size: 12px;
+	font-family:Georgia,'Lucida Grande',Verdana, 'Times New Roman', Arial, Helvetica;
+}
+#adminForm h3{
+	margin:3px;
+	padding:0;
+	font-family:Georgia,'Lucida Grande',Verdana, 'Times New Roman', Arial, Helvetica;
+	font-size:14px;
+	border-bottom:1px #ccc solid;
+	font-weight:bold;
+}
+.componentheading{
+	font-size:20px;
+	font-family:Georgia,Verdana,Arial,Helvetica,'Times New Roman';
+}
+#adminForm select,input{
+	padding:1px;
+	margin:1px;	
+	font-family:'Lucida Grande',Verdana, 'Times New Roman', Arial, Helvetica ;
+	font-size:12px;
+}
+#adminForm fieldset{
+	margin:0px;
+	padding:0px;
+	font-size:14px;
+	border:none;
+	background: none;
+}
+#adminForm label{
+	font-family:Georgia,'Lucida Grande',Verdana,Arial,Helvetica,'Times New Roman';
+	font-weight:normal;
+	background:none;
+	font-size:14px;
+	color: #313131;
+}
+#adminForm td{
+	border: none;
+	line-height:25px;
+	font-size:13px;
+	font-family:'Lucida Grande',Verdana, 'Times New Roman', Arial, Helvetica;
+}
+#adminForm input#position{
+	position: relative !important;
+	top: 0 !important;
+	left: 0 !important;
+}
+#adminForm textarea{
+	color: #000;
+	font-size: 14px;
+	padding: 2px;
+}
+#adminForm tr{
+	margin-bottom: 10px;
+}

@@ -1,0 +1,157 @@
+span.editable{
+	margin:0 !important;
+	padding:0 !important;
+	background:none !important;
+}
+#fr_togglebar{
+	display:block;
+	position:fixed;
+	width:100%;
+	overflow:hidden;
+	padding:0;
+	margin:0;
+	text-decoration:none;
+	z-index:100000;	
+}
+#fr_toggle{
+	float:right;
+    padding:1px 5px;
+	margin:0;
+	background-color:#fff;
+	color: #469910;
+	opacity:0.7;
+	moz-opacity:0.7;
+	letter-spacing: 1px;
+	cursor:pointer;
+	font-family:Verdana,Arial,Helvetica,'Times New Roman';
+	font-size:12px;
+	line-height:20px;
+	font-weight:normal;
+	text-align:center;
+}
+#fr_toggle.enabled{
+	color: #994333;
+}
+#fr_toggle:hover{
+	opacity:1.0;
+	moz-opacity:1.0;
+}
+/* edit-in-place form */
+#fr_editform{
+	padding:0;
+	margin:0;
+	background:none !important;
+	position:relative;
+	display:inline;
+}
+#fr_editform:hover{
+	cursor:default;
+	border:0;
+	background:none;
+}
+#fr_editform input{
+	border:1px solid #ccc;
+	position:relative;
+}
+#fr_editform input.fr_textfield{
+	background-color:#fff;
+	display:inline;
+	color:#242B30;
+	padding:1px;
+	margin:0px;
+	font-size:14px;
+	letter-spacing:0px;
+	font-family:Verdana,'Times New Roman',Arial,Helvetica;
+}
+/* Buttons */
+#fr_editform input.fr_button{
+	font-weight:normal;
+	font-variant: normal;
+	background-color:#f5f5f5 !important;
+	border:1px solid #dedede;
+	border-top:1px solid #eee;
+    border-left:1px solid #eee;
+    font-family:"Lucida Grande", Tahoma, Arial, Verdana, sans-serif;
+	font-size:10px;
+    line-height:130%;
+    letter-spacing: normal;
+    text-decoration:none;
+    font-weight:bold;
+    color:#565656;
+    cursor:pointer;
+    text-indent: 12px;
+	margin:0px;
+	width:auto;
+	overflow:visible;
+	margin-top:1px;
+	padding: 1px 1px 0px;
+}
+/* submit button */
+#fr_editform input.submit{
+	background: url(../images/check_small.png) no-repeat 2px 3px;
+	margin-right: 1px !important;
+}
+#fr_editform input.submit:hover{
+	background-color:#E6EFC2 !important;
+    border:1px solid #C6D880;
+    color: #529214;
+}
+#fr_editform input.submit:active{
+	background-color:#529214 !important;
+	border: 1px solid #529214;
+	color: #fff;
+}
+/* cancel button */
+#fr_editform input.cancel{
+	background: url(../images/cross_small.png) no-repeat 2.5px 3px;
+}
+#fr_editform input.cancel:hover{
+    background-color:#fbe3e4 !important;
+    border:1px solid #fbc2c4;
+    color: #d12f19;
+}
+#fr_editform input.cancel:active{
+    background-color:#d12f19 !important;
+    border:1px solid #d12f19;
+    color: #fff;
+}
+/* The AJAX loading icon */
+.fr_loadingicon img{
+	margin-bottom:-2px;
+	margin-left:2px;
+	border:0 none;
+}
+.fr_loadingicon{
+	background:none !important;
+}
+/* Edit icons */
+a.fr_editicon{
+
+}
+a.fr_editicon{
+	border:none !important;
+	text-decoration:none !important;
+	width:15px !important;
+	height:16px !important;
+	background: url(../images/edit_s.png) no-repeat 0px -2px !important;
+	padding:0px !important;
+	position:absolute;
+	display: none;
+	margin-left:5px;
+}
+a.fr_editicon :hover{
+	background:none !important;
+	border:none !important;
+}
+/* link hover class */
+.fr_hoverClass:hover{
+	text-decoration:none !important;
+}
+.fr_hoverClass{
+	text-decoration:none !important;
+}
+/* title class */
+span.fr_title{
+	cursor:text !important;
+	text-decoration:none !important;
+}

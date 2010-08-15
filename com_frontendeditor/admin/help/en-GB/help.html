@@ -1,0 +1,125 @@
+<html>
+<head>
+	<style type="text/css" media="screen">
+		*{
+			color:#333;
+			font-family:Tahoma, Helvetica, Arial, sans-serif;
+			font-size:13px;
+			line-height:1.3em;
+		}
+		h1{
+			font-size:15px;
+			color:#1B57B1;
+			font-family:Helvetica,Arial,sans-serif;
+		}
+		code{
+			font-family:"Courier New", Courier, Helvetica, Arial, sans-serif;
+			font-size:13px;
+			font-weight:bold;
+			color:#2E2E2E;
+		}
+	</style>
+</head>
+<body>
+<h1 id="enhanced_frontend_editing">Enhanced Frontend Editing</h1>
+
+<h1 id="how_to_access">How to access</h1>
+
+<p>Select <strong>Components->Enhanced Frontend Editor</strong></p>
+
+<h1 id="description">Description</h1>
+
+<p>Enhanced Frontend Editing allows you to add increased frontend editing capability to your Joomla! Site. The Enhanced Frontend Editing Manager screen allows you to configure the behavior of this extension. It works in conjunction with the Frontend Editor and Frontend Article Editor plugins.</p>
+
+<h1 id="screenshot">Screenshot</h1>
+
+<p><img src="images/admin.jpg" alt="Admin screenshot" title="Admin Screenshot"></p>
+
+<h1 id="toolbar">Toolbar</h1>
+
+<p>The functions are:</p>
+
+<ul>
+<li><strong>Save</strong>: To save the settings.</li>
+<li><strong>Cancel</strong>: To quit the screen without saving any changes.</li>
+<li><strong>Help</strong>: Open this help screen.</li>
+</ul>
+
+<h1 id="applying_the_hack">Applying the hack</h1>
+
+<p>When you first install the extension, you&#8217;ll need to click on <strong>Apply Changes</strong> to get your current active template ready for this extension to work properly. You&#8217;ll need to apply the hack separately for each template you intend to use this extension with.</p>
+
+<p>As a part of the hack, the extension does the following:</p>
+
+<ol>
+<li><p>Your template's <strong>index.php</strong> is backed up as <strong>index.php.backup</strong>. Then, in your index.php:</p>
+
+<ul>
+<li><p>The style &#8220;<strong>freditor</strong>&#8221; is added to the jdoc:include statements for modules. Eg:</p>
+
+<p><code>&lt;jdoc:include type="modules" name="user3" /&gt;</code> </p>
+
+<p>gets changed into: </p>
+
+<p><code>&lt;jdoc:include type="modules" name="user3" style="freditor" /&gt;</code></p></li>
+<li><p>The jdoc:include statements for modules are surrounded by a div with the class attribute of the form &#8216;frpos.<position-name>&#8217;. Eg:</p>
+
+<p><code>&lt;div class="frpos.newsflash"&gt;</code> <br>
+		<code>&lt;jdoc:include type="modules" name="newsflash" style="raw freditor" /&gt;</code> <br>
+<code>&lt;/div&gt;</code></p></li>
+</ul></li>
+<li><p>Your template's <strong>html/modules.php</strong>, if it exists, is backed up as <strong>html/modules.php.backup</strong>. The module chrome, <em>modChrome_freditor</em>, is then added to the modules.php of your template. </p></li>
+<li><p>Your template's <strong>html/com_content/article/form.php</strong> is backed up if it already exists as <strong>form.php.backup</strong>. It is then completely overwritten with this extension's own layout file.</p></li>
+</ol>
+
+<h1 id="reverting_the_hack">Reverting the hack</h1>
+
+<p>If, at any time, you want to revert the hack, you can do that by clicking on <strong>Revert Changes</strong>. It will make use of the backup files that were created when the hack was applied so make sure you don&#8217;t delete them and they will be recovered to their initial state. </p>
+
+<h1 id="settings">Settings</h1>
+
+<p>You can change the following settings from the admin interface:</p>
+
+<ul>
+<li><p><strong>At the start of a new session, editing should be On/Off</strong>: When you first login into your site, should editing be On/Off. Rest of the time, your last editing state is used.</p></li>
+<li><p><strong>Enable editing of modules</strong>: Using this option, you can either enable or disable editing of modules at the frontend.</p></li>
+<li><p><strong>Enable editing of menuitems and page titles</strong>: Using this option, you can either enable or disable editing of menuitem titles and page titles at the frontend.</p></li>
+<li><p><strong>Enable drag &amp; drop ordering of modules</strong>: Using this option, you can either enable or disable drag &amp; drop placement of modules at the frontend.</p></li>
+<li><p><strong>Unique selector for Article titles</strong>: The unique CSS Selector for elements containing the article title. By default, it is <strong>.contentheading</strong>. If your template uses some other selector, you can mention it here.</p></li>
+<li><p><strong>Unique selector for Page titles</strong>: The unique CSS Selector for page title. It should not be the same as article title. By default, it is <strong>.componentheading</strong>.</p></li>
+<li><p><strong>Unique selector for article edit icons</strong>: The default article edit icons need to be hidden and so the selector for article edit icons must be specified if it is different than the default.</p></li>
+<li><p><strong>Hover color for editable titles</strong>: Here, you can either allow the template to specify the hover color, by using <code>#fr_title{ background-color: &lt;color&gt; }</code> in its CSS.</p>
+
+<p>Or, you can pick your own color using the color picker.</p></li>
+<li><p><strong>Automatically set alias on article title save</strong>: When you edit an article's title, the alias of that article also gets automatically updated. Eg: If you rename the article as '<em>Frontend editing</em>', its alias would get saved as '<em>frontend-editing</em>'. You can set this to be enabled or disabled.</p></li>
+<li><p><strong>Display Advanced, legacy and other parameters in module editor</strong>: You can either enable/disable visibility of the advanced params at the frontend in the module editor.</p></li>
+</ul>
+
+<h1 id="how_to_perform_editing">How to perform editing</h1>
+
+<p>Once you&#8217;ve set up this extension properly for your template, you can log in at the frontend and then you&#8217;ll be able to do the following:</p>
+
+<ul>
+<li><p><strong>Edit article, module, menu-item and page titles</strong>: You&#8217;ll be able to edit these titles by clicking on them. Once you click on them, an edit field will appear where you can change the text of the title and save it. </p>
+
+<p><img src="images/title_1.jpg" alt="Article title editing" title="Article title editing"> <img src="images/title_2.jpg" alt="In-place editing form" title="In-place editing form"></p></li>
+<li><p><strong>Edit articles in a modal popup</strong>: You&#8217;ll be able to edit articles in a modal popup by clicking on their edit icons. </p>
+
+<p><img src="images/article_modal.jpg" alt="Article editing in modal popup" title="Article editing in modal popup"> </p></li>
+<li><p><strong>Edit module parameters in a modal popup</strong>: You&#8217;ll be able to edit module parameters by clicking on the edit icon next to each module.</p>
+
+<p><img src="images/module_modal.jpg" alt="Module editing in modal popup" title="Module editing in modal popup"> </p></li>
+<li><p><strong>Drag &amp; Drop modules</strong>: You&#8217;ll be able to drag and drop module in same and between positions. This way you&#8217;ll be easily able to change the ordering and position of modules and see the result in real-time. </p>
+
+<p><img src="images/dragdrop.jpg" alt="Drag &amp; drop modules" title="Drag &amp; drop modules"> </p></li>
+</ul>
+
+<h1 id="quick_tips">Quick Tips</h1>
+
+<ul>
+<li><p>To toggle editing at the frontend, you can press the key &#8216;<strong><em>e</em></strong>&#8217; rather than clicking on &#8216;<strong>toggle editing on/off</strong>&#8217; at the top-right hand corner of the screen everytime.</p></li>
+<li><p>It is advised that before applying the changes again to the same template, you first revert the changes from the previous hack and then apply the changes again.</p></li>
+<li><p>Menu Item titles will only be saved if they're contained in 'li' elements and have class attribute of the form 'item4' where 4 is the id of the menu-item. Similar to the default layout for mod_mainmenu.</p></li>
+</ul>
+</body>
+</html>

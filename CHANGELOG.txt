@@ -1,0 +1,45 @@
+Version 0.3.8 (24/10/2009)
+* Fixed bug #17869: Scrollbar appearing in modal popup in article editing
+* Fixed dependency on PHP 5
+
+Version 0.3.7 (26/08/2009)
+* Fixed bug #17718: Module editing not disabled completely
+* Fixed bug #17719: Editing menu item titles does not work when drag & drop is disabled or module editing is disabled
+
+Version 0.3.6 (10/08/2009)
+* Added user documentation and help to admin component
+* Instead of 'data-position' attribute, namespaced class attribute is used. eg: class="frpos.left"
+* Fixed IE Tabbed Editor CSS bug
+* Modal popups can no longer be closed by pressing 'Esc'.
+* Added admin option to enable or disable automatic update of article alias on article title save
+* Compressed JavaScript using YUICompressor
+
+Version 0.3.5 (4/08/2009)
+* Updated module chrome structure and renamed it to modChrome_freditor
+* Namespaced all JavaScript functions to avoid conflict with user's JS
+* Upgraded to mootools 1.2.3
+* Fixed bug of titles disappearing in Opera
+* When drag & drop is not successful, modules return to their original positions
+* Added better filtering of input for accurate recognition of titles and prevention of XSS attacks
+
+Version 0.3.1 (28/07/2009):
+* Added option to admin to apply/revert hack that modifies the template's index.php, adds the module chrome and layout file form.php
+* Color picker disabled when 'let template decide' is selected
+* Page title selector option added to admin
+* Edit icon selector option added to admin
+* Edit icons for modules now a part of module chrome ( instead of being created using JS )
+* Fixed bug #17333: When 'Show title' is disabled, edit icons for articles disappear
+* Fixed bug #17273: IE doesn't works with shortcut key 'e'
+
+Version 0.2.1 (20/07/2009):
+
+* Added administrator interface to component
+* Enable/disable editing of modules, menuitem in admin
+* Enable/disable drag & drop in admin
+* Set title hover color in admin
+* Display/Hide additional params in modal popup for module editing
+* Fixed bug #17181:Saving custom HTML via modal popup for modules in non-webkit browsers
+* Fixed bug #17179: Publish article layout
+* Slight change in drag & drop UI. Dashed border to recognise movable module.
+* Fixed cookie path
+

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="plugin" group="content" method="upgrade">
+	<name>Content - Frontend Article Editor</name>
+	<author>Ankit Ahuja</author>
+	<authorEmail>ahuja.ankit@gmail.com</authorEmail>
+	<authorUrl>www.ankitahuja.com</authorUrl>
+	<creationDate>Apr 2009</creationDate>
+ 	<copyright>Copyright (C) 2009 Open Source Matters. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<version>0.3.7</version>
+	<description>Allow Editing of Articles from the frontend. This plugin works in conjunction with the Frontend Editor plugin and Frontend Editor component.</description>
+	<files>
+		<filename plugin="articleeditor">articleeditor.php</filename>
+	</files>
+</install>
